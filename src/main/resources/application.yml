@@ -1,13 +1,8 @@
 server:
   port: 8000
-
-db:
-  url: localhost
-  user: mkyong
-  password: password
   
-#spring:
-#  datasource:
-#    url: jdbc:mysql://localhost:3306/mydb
-#	user: root
-#	password: root  
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/news_portal
+    username: root
+    password: root  

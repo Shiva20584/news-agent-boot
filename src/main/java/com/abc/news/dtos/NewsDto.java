@@ -8,11 +8,21 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 @JsonInclude(value = Include.NON_NULL)
 public class NewsDto {
 
+	private Long id;
 	private String newsId;
 	private String publishedDate;
 	private String heading;
 	private String body;
 	private String publisher;
+	private String tags;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getNewsId() {
 		return newsId;
@@ -52,6 +62,14 @@ public class NewsDto {
 
 	public void setPublisher(String publisher) {
 		this.publisher = publisher;
+	}
+
+	public String getTags() {
+		return tags;
+	}
+
+	public void setTags(String tags) {
+		this.tags = tags;
 	}
 
 	@Override
